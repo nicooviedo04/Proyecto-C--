@@ -117,6 +117,49 @@ int main(){
 }
 */
 
+//Operadores aritmeticos en C++
+#include <iostream> //libreria que permite entrada y salida de datos
+
+int main(){
+
+    int estudiante = 10; //declaracion y asignacion de valor a la variable de tipo int
+    
+    //Suma
+    estudiante += 5; //suma 5 al valor de la variable estudiante usando el operador compuesto +=
+    estudiante++; //incrementa en 1 el valor de la variable estudiante usando el operador de incremento ++
+   
+    //Resta
+    estudiante -= 3; //resta 3 al valor de la variable estudiante usando el operador compuesto -=
+    estudiante --; //decrementa en 1 el valor de la variable estudiante usando el operador de decremento --
+    
+    //Multiplicacion
+    estudiante *= 2; //multiplica por 2 el valor de la variable estudiante usando el operador compuesto *=
+   
+    //Division
+    estudiante /= 4; //divide por 4 el valor de la variable estudiante usando el operador compuesto /=
+    
+    //Modulo
+    estudiante %= 3; //asigna el residuo de la division de estudiante entre 3 a la variable estudiante usando el operador compuesto %=
+   
+    
+    int a = 10; //declaracion y asignacion de valor a la variable de tipo int
+    int b = 3; //declaracion y asignacion de valor a la variable de tipo int
+
+    //operadores aritmeticos
+    int suma = a + b; //suma
+    int resta = a - b; //resta
+    int multiplicacion = a * b; //multiplicacion
+    int division = a / b; //division
+    int modulo = a % b; //modulo o residuo de la division
+
+    std::cout << "Suma: " << suma << std::endl; //imprime en pantalla el valor de suma
+    std::cout << "Resta: " << resta << std::endl; //imprime en pantalla el valor de resta
+    std::cout << "Multiplicacion: " << multiplicacion << std::endl; //imprime en pantalla el valor de multiplicacion
+    std::cout << "Division: " << division << std::endl; //imprime en pantalla el valor de division
+    std::cout << "Modulo: " << modulo << std::endl; //imprime en pantalla el valor de modulo
+
+    return 0;
+}
 
 
 
