@@ -50,5 +50,20 @@ int main(){
 }
 */
 
+// uso de const para definir constantes
 
+#include <iostream> //libreria que permite entrada y salida de datos
+#include <string> //libreria que permite usar el tipo de dato string
+int main(){
 
+    //const -> palabra reservada que indica que el valor de la variable no puede ser modificado despues de su inicializacion
+    const float PI = 3.14159f; //declaracion y asignacion de valor a la variable constante de tipo float
+    const int EDAD_MINIMA = 18; //declaracion y asignacion de valor a la variable constante de tipo int
+    
+    //PI = 3.14; //error de compilacion porque se intenta modificar el valor de una constante
+
+    std::cout << "El valor de PI es: " << PI << std::endl; //imprime en pantalla el valor de PI
+    std::cout << "La edad minima es: " << EDAD_MINIMA << std::endl; //imprime en pantalla el valor de EDAD_MINIMA
+
+    return 0;
+} 
