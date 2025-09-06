@@ -50,7 +50,7 @@ int main(){
 }
 */
 
-// uso de const para definir constantes
+/* Uso de const para definir constantes
 
 #include <iostream> //libreria que permite entrada y salida de datos
 #include <string> //libreria que permite usar el tipo de dato string
@@ -67,3 +67,31 @@ int main(){
 
     return 0;
 } 
+*/
+
+/*Namespaces en C++
+#include <iostream> //libreria que permite entrada y salida de datos
+#include <string> //libreria que permite usar el tipo de dato string
+
+namespace primero { //definicion del namespace primero
+    int x = 1; //declaracion y asignacion de valor a la variable de tipo int dentro del namespace primero}  
+}
+
+namespace segundo { //definicion del namespace segundo
+    int x = 2; //declaracion y asignacion de valor a la variable de tipo int dentro del namespace segundo
+}
+int main(){
+    using namespace primero; //permite usar los elementos del namespace primero sin necesidad de anteponer el nombre del namespace
+    std::cout << "Valor de x usando ´using´ namespace primero: " << x << std::endl; //imprime en pantalla el valor de x en el ambito del namespace primero
+    
+    int x = 0; //declaracion y asignacion de valor a la variable de tipo int en el ambito global
+    std::cout << "Valor de x en el ambito global: " << x << std::endl; //imprime en pantalla el valor de x en el ambito global
+    std::cout << "Valor de x en el namespace primero: " << primero::x << std::endl; //imprime en pantalla el valor de x en el namespace primero
+    std::cout << "Valor de x en el namespace segundo: " << segundo::x << std::endl; //imprime en pantalla el valor de x en el namespace segundo
+
+
+    return 0;
+}
+*/
+
+
