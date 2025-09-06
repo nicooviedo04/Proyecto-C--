@@ -94,4 +94,29 @@ int main(){
 }
 */
 
+/*Typedef y using en C++ serian alias para tipos de datos
+
+#include <iostream> //libreria que permite entrada y salida de datos
+#include <string> //libreria que permite usar el tipo de dato string
+
+//typedef std::string text_t; //creacion de un alias para el tipo de dato string usando typedef
+//typedef int entero_t; //creacion de un alias para el tipo de dato int usando typedef
+
+using text_t = std::string; //creacion de un alias para el tipo de dato string usando using se prefiere usar using en lugar de typedef en C++
+using entero_t = int; //creacion de un alias para el tipo de dato int usando using
+
+int main(){
+
+    text_t nombre = "Nicolas"; //declaracion y asignacion de valor a la variable de tipo text_t (alias de string)
+    entero_t edad = 24; //declaracion y asignacion de valor a la variable de tipo entero_t (alias de int)
+    
+    std::cout << "Hola " << nombre << std::endl; //imprime en pantalla el mensaje Hola seguido del valor de la variable nombre
+    std::cout << "Tu edad es: " << edad << std::endl; //imprime en pantalla el mensaje Tu edad es: seguido del valor de la variable edad
+
+    return 0;
+}
+*/
+
+
+
 
