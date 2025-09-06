@@ -117,7 +117,7 @@ int main(){
 }
 */
 
-//Operadores aritmeticos en C++
+/*Operadores aritmeticos en C++
 #include <iostream> //libreria que permite entrada y salida de datos
 
 int main(){
@@ -160,6 +160,94 @@ int main(){
 
     return 0;
 }
+*/
 
+/*Conversión de tipos en C++ se puede hacer de forma implicita o explicita 
+#include <iostream> //libreria que permite entrada y salida de datos
+
+int main(){
+
+    //Conversion implicita
+    double x = (int)3.14; //conversion explicita de double a int usando el operador de casteo (tipo) valor
+    x += 1.5; //suma 1.5 al valor de x lo convierte implicitamente a double y luego lo asigna a x
+    std::cout << "Valor de x (int): " << x << std::endl; //imprime en pantalla el valor de x
+
+    //Conversion explicita
+    int letra = 100; //declaracion y asignacion de valor a la variable de tipo char
+    std::cout << (char)letra << std::endl; //imprime en pantalla el valor de letra convirtiendolo a char usando el operador de casteo (tipo) valor
+
+
+    //ejempro de ejercicio
+    int PCorrecta = 8;
+    int PTotal = 10;
+    double porcentaje = PCorrecta / (double)PTotal * 100; //conversion explicita de int a double usando el operador de casteo (tipo) valor
+    std::cout << "Porcentaje de respuestas correctas: " << porcentaje << "%" << std::endl; //imprime en pantalla el valor de porcentaje
+
+    return 0;
+}
+*/
+
+/*Entrada de Usuario en C++
+#include <iostream> //libreria que permite entrada y salida de datos
+
+//cout << -> operador de insercion
+//cin >> -> operador de extraccion
+
+int main(){
+
+    std::string nombre; //declaracion de variable de tipo string
+    int edad;
+
+    std::cout << "Ingresa tu nombre completo: "; //imprime en pantalla el mensaje Ingresa tu nombre:
+    
+    //std::cin >> nombre; //lee el valor ingresado por el usuario y lo asigna a la variable nombre
+   
+    std::getline(std::cin, nombre); //el getline permite leer una linea completa incluyendo espacios en blanco
+    
+    //std::ws //elimina los espacios en blanco al inicio de la entrada estandar
+
+    std::cout << "Ingresa tu edad: ";
+    std::cin >> edad;
+
+    std::cout << "Hola " << nombre << ", Bienvenido al curso de C++!" << std::endl;
+    std::cout << "Tu edad es: " << edad << std::endl;
+
+    return 0;
+}
+*/
+
+/*Funciones útiles en C++
+
+#include <iostream> //libreria que permite entrada y salida de datos
+#include <cmath> //libreria que permite usar funciones matematicas como sqrt, pow, sin, cos, tan, etc.
+
+int main(){
+
+    double x = 3.14;
+    double y = 4;
+    double z;
+    double potencia;
+
+    //algunas funciones utiles de la libreria cmath
+
+    z = std::max (x , y); //funcion que devuelve el valor maximo entre x e y
+    z = std::min (x , y); //funcion que devuelve el valor minimo entre x e y
+    potencia = std::pow(2 , 3); //funcion que devuelve el valor de 2 elevado a la 3
+    z = std::sqrt(25); //funcion que devuelve la raiz cuadrada de 25
+    z = std::abs(-10); //funcion que devuelve el valor absoluto de -10
+    z = std::round(x); //funcion que redondea el valor de 3.14 al entero mas cercano
+    z = std::ceil(x); //funcion que redondea el valor de 3.14 al siguiente entero mayor
+    z = std::floor(x); //funcion que redondea el valor de 3.14 al siguiente entero menor
+
+    std::cout << "El valor maximo entre " << x << " y " << y << " es: " << z << std::endl;
+    std::cout << "El valor minimo entre " << x << " y " << y << " es: " << z << std::endl;
+    std::cout << "El valor de 2 elevado a la 3 es: " << potencia << std::endl;
+    std::cout << "La raiz cuadrada de 25 es: " << z << std::endl;
+    std::cout << "El valor absoluto de -10 es: " << z << std::endl;
+    std::cout << "El valor de " << x << " redondeado es: " << z << std::endl;
+    return 0;
+}
+
+*/
 
 
