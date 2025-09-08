@@ -275,4 +275,65 @@ int main(){
     return 0;
 }*/
 
+//If en C++ y Calculadora de vida de un personaje en un juego
+#include <iostream> //libreria que permite entrada y salida de datos
+#include <string> //libreria que permite usar el tipo de dato string
+
+//if sirve para tomar decisiones en el codigo basado en condiciones
+//else if sirve para evaluar multiples condiciones
+//else sirve para ejecutar un bloque de codigo si ninguna de las condiciones anteriores se cumple
+
+/*int main(){
+
+    int edad;
+    std::cout << "Ingresa tu edad: ";
+    std::cin >> edad;
+
+    if (edad >= 18) // condicion que se evalua si es verdadera o falsa
+    {
+        std::cout << "Bienvenido al curso de C++!" << std::endl;
+    }
+    else 
+    {
+        std:: cout << "Eres menor de edad, no puedes empezar el curso de c++" << std::endl;
+    }
+
+    return 0;
+
+    }
+    int main(){
+
+        int vida = 100;
+        int danio;
+        int vidaFinal;
+
+        std::cout << "Ingresa el danio recibido: ";
+        std::cin >> danio;
+
+        vidaFinal = vida -= danio;
+        std::cout << "Tu vida actual es: " << vidaFinal << std::endl;
+
+        if(vidaFinal >= 75){
+            std::cout << "Enhorabuena no te has lastimado tanto" << std::endl;
+        }
+        else if (vidaFinal == 50){
+            std ::cout << "Cuidado, estas a la mitad de tu vida" << std::endl;
+        }
+        else if (vidaFinal >= 25){
+            std ::cout << "Estas en peligro, te queda poca vida" << std::endl;
+        }
+        else if (vidaFinal <= 0)
+        {
+            std::cout << "Has muerto" << std::endl;
+        }
+        else {
+            std::cout << "Te queda poca vida, ten cuidado" << std::endl;
+        }        
+
+        return 0;
+    }*/
+
+   
+
+    
 
