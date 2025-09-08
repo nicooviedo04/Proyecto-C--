@@ -250,4 +250,29 @@ int main(){
 
 */
 
+/*Ejercicio: Calculo de la hipotenusa de un triangulo rectangulo usando el teorema de pitagoras
+   c = sqrt(a^2 + b^2)
+   donde c es la hipotenusa, a y b son los catetos
+
+#include <iostream> //libreria que permite entrada y salida de datos
+#include <cmath> //libreria que permite usar funciones matematicas como sqrt, pow, sin, cos, tan, etc.
+
+int main(){
+
+   double a;
+   double b;
+   double c;
+
+   std::cout << "Ingresa el valor del lado a: ";
+   std::cin >> a;
+   std::cout << "Ingresa el valor del lado b: ";
+   std::cin >> b;
+
+    c = sqrt( pow(a,2) + pow(b,2) ); //teorema de pitagoras c = sqrt(a^2 + b^2)
+
+    std::cout << "El valor de la hipotenusa es: " << c << std::endl;
+
+    return 0;
+}*/
+
 
