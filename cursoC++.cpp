@@ -412,5 +412,62 @@ int main(){
         return 0;
     }*/ 
 
+/*Calculadora 
 
+#include <iostream> //libreria que permite entrada y salida de datos
+
+int main(){
+
+    char operacion;
+    double num1;
+    double num2;
+    double resultado; 
+
+    std::cout << "##########CALCULADORA##########\n";
+
+    std::cout << "Ingresa una operacion (+,-,*,/): ";
+    std::cin >> operacion;
+ 
+    std ::cout << "ingresa el primer numero: ";
+    std::cin >> num1;
+    
+    std::cout << "Ingresa el segundo numero: ";
+    std:: cin >> num2;
+
+
+
+    switch (operacion)
+    {
+        case '+':
+            resultado = num1 + num2;
+            std :: cout << "El resultado de la suma es: " << resultado << std::endl;
+            break;
+        case '-':
+            resultado = num1 - num2;
+            std::cout << "El resultado de la resta es: " <<resultado << std::endl;
+            break;
+        case '*':
+            resultado = num1 * num2;
+            std::cout << "El resultado de la multiplicacion es: " <<resultado << std::endl;
+            break;
+        case '/':
+            if (num2 == 0)
+            {
+                std::cout <<"Operacion no valida.";
+            }
+            else{
+                resultado = num1 / num2;
+            std::cout << "El resultado de la division es: " <<resultado << std::endl;
+            }
+            break;
+        default:
+            std::cout << "Ingrese una operacion valida"<< std::endl;
+
+
+    }
+
+     return 0;
+    }*/
+
+   
 
