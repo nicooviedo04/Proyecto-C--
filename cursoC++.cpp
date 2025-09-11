@@ -275,14 +275,11 @@ int main(){
     return 0;
 }*/
 
-//If en C++
-#include <iostream> //libreria que permite entrada y salida de datos
-#include <string> //libreria que permite usar el tipo de dato string
-
-//if sirve para tomar decisiones en el codigo basado en condiciones
-//else if sirve para evaluar multiples condiciones
-//else sirve para ejecutar un bloque de codigo si ninguna de las condiciones anteriores se cumple
-/*int main(){
+/*If en C++
+if sirve para tomar decisiones en el codigo basado en condiciones
+else if sirve para evaluar multiples condiciones
+else sirve para ejecutar un bloque de codigo si ninguna de las condiciones anteriores se cumple
+int main(){
 
     int edad;
     std::cout << "Ingresa tu edad: ";
@@ -332,9 +329,8 @@ int main(){
         return 0;
     }*/
 
-   
- //switch sirve para evaluar una variable contra multiples valores posibles
-    /*int main(){
+ /*Switch sirve para evaluar una variable contra multiples valores posibles
+    int main(){
 
         int mes;
         std:: cout << "Ingresa el numero del mes (1-12): ";
@@ -385,9 +381,8 @@ int main(){
         
 
         return 0;
-    }*/ 
-
-    int main(){
+    }
+     int main(){
 
         char calificacion;
         std:: cout << "Ingresa tu calificacion (A, B, C, D, F): ";
@@ -415,7 +410,7 @@ int main(){
         }
 
         return 0;
-    }
+    }*/ 
 
 
 
