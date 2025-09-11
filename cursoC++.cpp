@@ -275,14 +275,13 @@ int main(){
     return 0;
 }*/
 
-//If en C++ y Calculadora de vida de un personaje en un juego
+//If en C++
 #include <iostream> //libreria que permite entrada y salida de datos
 #include <string> //libreria que permite usar el tipo de dato string
 
 //if sirve para tomar decisiones en el codigo basado en condiciones
 //else if sirve para evaluar multiples condiciones
 //else sirve para ejecutar un bloque de codigo si ninguna de las condiciones anteriores se cumple
-
 /*int main(){
 
     int edad;
@@ -334,6 +333,89 @@ int main(){
     }*/
 
    
+ //switch sirve para evaluar una variable contra multiples valores posibles
+    /*int main(){
 
-    
+        int mes;
+        std:: cout << "Ingresa el numero del mes (1-12): ";
+        std:: cin >> mes;
+        
+       switch (mes) //se evalua la variable mes
+       {
+         case 1:
+            std::cout << "Enero" << std::endl;
+            break; //break sirve para salir del switch despues de ejecutar un caso
+            case 2:
+            std::cout << "Febrero" << std::endl;
+            break;
+            case 3:
+            std::cout << "Marzo" << std::endl;
+            break;
+            case 4:
+            std::cout << "Abril" << std::endl;
+            break;
+            case 5:
+            std::cout << "Mayo" << std::endl;
+            break;
+            case 6:
+            std::cout << "Junio" << std::endl;
+            break;
+            case 7:
+            std::cout << "Julio" << std::endl;
+            break;
+            case 8:
+            std::cout << "Agosto" << std::endl;
+            break;
+            case 9:
+            std::cout << "Septiembre" << std::endl;
+            break;
+            case 10:
+            std::cout << "Octubre" << std::endl;
+            break;
+            case 11:
+            std::cout << "Noviembre" << std::endl;
+            break;
+            case 12:
+            std::cout << "Diciembre" << std::endl;
+            break;
+
+            default: 
+            std::cout << "Mes invalido. Ingrese un numero del 1 al 12." << std::endl; //default se ejecuta si ningun caso coincide. no se finaliza con break
+       }
+        
+
+        return 0;
+    }*/ 
+
+    int main(){
+
+        char calificacion;
+        std:: cout << "Ingresa tu calificacion (A, B, C, D, F): ";
+        std:: cin >> calificacion;
+
+        switch (calificacion)
+        {
+        case 'A':
+            std::cout << "Excelente" << std::endl;
+            break;
+        case 'B':
+            std::cout << "Muy bien" << std::endl;
+            break;
+        case 'C':
+            std::cout << "Bien" << std::endl;
+            break;
+        case 'D':
+            std::cout << "Pasaste por los pelos" << std::endl;
+            break;
+            case 'F':
+            std::cout << "Reprobaste el curso" << std::endl;
+            break;
+        default:
+            std::cout << "Calificacion invalida. Ingrese nuevamente" << std::endl;
+        }
+
+        return 0;
+    }
+
+
 
