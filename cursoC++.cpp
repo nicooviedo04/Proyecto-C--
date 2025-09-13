@@ -568,3 +568,41 @@ int main(){
 }*/
 
 
+// Conversion de temperatura 
+
+#include <iostream> //libreria que permite entrada y salida de datos
+
+int main(){
+
+    double temp;
+    char op;
+
+
+    std::cout << " ***** Conversion de temperatura *****\n";
+    std::cout << " F = Fahrenheit\n";
+    std::cout << " C = Celsius\n";
+    std::cout << " ******************************\n";
+    std::cout << "Ingresa la unidad de la temperatura (F/C): ";
+    std::cin >> op;
+
+    if (op == 'F' || op == 'f') // si la unidad es Fahrenheit 
+    {
+        std::cout << "Ingresa la temperatura en Celsius: ";
+        std::cin >> temp;
+
+        temp =1.8*temp + 32;
+        std::cout << "La temperatura en Fahrenheit es: " << temp << " F" << std::endl;
+    } 
+    else if (op == 'C' || op == 'c') // si la unidad es Celsius
+    {
+        std::cout << "Ingresa la temperatura en Fahrenheit: ";
+        std::cin >> temp;
+        temp = (temp - 32) / 1.8;
+        std::cout << "La temperatura en Celsius es: " << temp << " C" << std::endl;
+    }
+    else {
+        std::cout << "Ingresa C o F" << std::endl;
+    }
+    std::cout << " ******************************\n";
+    return 0;
+}
