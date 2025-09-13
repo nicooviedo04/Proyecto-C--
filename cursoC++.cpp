@@ -567,7 +567,6 @@ int main(){
    return 0;
 }*/
 
-
 /*Conversion de temperatura 
 
 #include <iostream> //libreria que permite entrada y salida de datos
@@ -606,5 +605,38 @@ int main(){
     std::cout << " ******************************\n";
     return 0;
 }*/
+
+/*Métodos de Cadena útiles
+
+#include <iostream> //libreria que permite entrada y salida de datos
+
+int main(){
+    std::string nombre;
+    char pos;
+
+    nombre = "Nicolas";
+    nombre.clear(); // clear() elimina todo el contenido de la cadena dejandola vacia
+    nombre.append(" Oviedo"); //append() agrega una cadena al final de la cadena original
+    pos =  nombre.at(0); //at() permite acceder a un caracter especifico de la cadena usando su indice (comienza en 0)
+    pos = nombre.insert(0, "Sr. "); //insert() inserta una cadena en una posicion especifica de la cadena original
+    nombre.find("Nico"); //find() busca una subcadena dentro de la cadena original y devuelve la posicion del primer caracter de la subcadena si no la encuentra devuelve -1
+    nombre.erase(0, 4); //erase() elimina una parte de la cadena desde una posicion especifica y por una cantidad de caracteres especifica
+    nombre.replace(0, 3, "Don"); //replace() reemplaza una parte de la cadena desde una posicion especifica y por una cantidad de caracteres especifica con otra cadena
+    nombre.substr(0, 3); //substr() devuelve una subcadena desde una posicion
+    nombre.empty(); //empty() devuelve true(1) si la cadena esta vacia, false(0) en caso contrario
+    nombre.length(); //length() devuelve la longitud de la cadena incluyendo espacios en blanco
+    nombre.resize(5); //resize() cambia el tamaño de la cadena a un valor especifico truncando o agregando espacios en blanco al final si es necesario
+   
+
+    std::cout << "El nombre es: " << nombre << std::endl; //imprime en pantalla el valor de la variable nombre
+    std::cout << "El primer caracter de la cadena es: " << pos << std::endl; //imprime en pantalla el primer caracter de la cadena
+    std::cout << "La longitud de la cadena es: " << nombre.length() << std::endl; //length() devuelve la longitud de la cadena incluyendo espacios en blanco
+    std::cout << "La cadena en mayusculas es: " << nombre.empty() << std::endl; //empty() devuelve true(1) si la cadena esta vacia, false(0) en caso contrario
+
+    
+   
+};*/
+
+
 
 
