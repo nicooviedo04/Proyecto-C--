@@ -568,7 +568,7 @@ int main(){
 }*/
 
 
-// Conversion de temperatura 
+/*Conversion de temperatura 
 
 #include <iostream> //libreria que permite entrada y salida de datos
 
@@ -605,4 +605,6 @@ int main(){
     }
     std::cout << " ******************************\n";
     return 0;
-}
+}*/
+
+
