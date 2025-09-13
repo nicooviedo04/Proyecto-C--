@@ -469,5 +469,102 @@ int main(){
      return 0;
     }*/
 
-   
+/*Operador Ternario es una forma abreviada de escribir una estructura if-else
+
+#include <iostream>
+
+
+int main(){
+
+    // Operador Ternario ?: es un reemplazo para usar la declaracion if-else cuando se desea asignar un valor a una variable basado en una condicion
+    // condicion ? expresion1 : expresion2;
+
+    int calificacion;
+    std::cout << "Ingresa tu calificacion (0-100): ";
+    std::cin >> calificacion;
+
+    Ejemplo 1 de if-else
+    if (calificacion >= 60)
+    {
+        std::cout << "Aprobaste el curso!" << std::endl;
+    }
+    else
+    {
+        std::cout << "Reprobaste el curso." << std::endl;
+    }
+
+    //usando operador ternario
+
+    calificacion >= 60 ? std::cout << "Aprobaste el curso!" << std::endl : std::cout << "Reprobaste el curso." << std::endl;
+
+
+    return 0;
+}
+    //otro ejemplo de operador ternario
+    #include <iostream>
+
+    int main(){
+
+    bool aprobasteElexamen = true;
+
+    aprobasteElexamen == true ? std:: cout << "Felicidades, aprobaste el examen!" << std::endl : std::cout << "Lo siento, reprobaste el examen." << std::endl;
+
+    return 0;
+}
+
+
+}*/
+
+/*Operador logico en C++
+#include <iostream> //libreria que permite entrada y salida de datos
+
+//Operadores logicos: && (AND) : Comprueba si dos condiciones son verdaderas.
+//|| (OR) : Comprueba si al menos una de las condiciones es verdadera.
+//! (NOT) : Invierte el estado logico de su operando.
+
+int main(){
+
+    //Ejemplo de operador logico AND (&&)
+    int temperatura;
+    std::cout << "Ingresa la temperatura actual: ";
+    std::cin >> temperatura;
+
+    if(temperatura > 0 && temperatura < 30){
+
+        std::cout << "El clima es agradable" << std::endl;
+    }
+    else {
+        std::cout << "El clima no es agradable" << std::endl;
+    }
+
+    //Ejemplo de operador logico OR (||)
+   int temperatura;
+    std::cout << "Ingresa la temperatura actual: ";
+    std::cin >> temperatura;
+
+    if(temperatura <= 0 || temperatura >= 30){
+
+        std::cout << "El clima no es agradable" << std::endl;
+    }
+    else {
+        std::cout << "El clima es agradable" << std::endl;
+    }
+
+
+    //Ejemplo de operador logico NOT (!)
+    bool soleado = true;
+
+    if(!soleado){ //si no es soleado
+        std::cout << "El clima no es agradable" << std::endl;
+    }
+    else {
+        std::cout << "El clima es agradable" << std::endl;
+    }
+
+
+
+
+   return 0;
+}*/
+
 
