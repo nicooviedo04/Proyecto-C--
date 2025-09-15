@@ -637,6 +637,36 @@ int main(){
    
 };*/
 
+/*Ciclo WHILE en C++
+
+#include <iostream> //libreria que permite entrada y salida de datos
 
 
+int main(){
+
+    std::string nombre;
+
+    while (nombre.empty()) //empty() devuelve true(1) si la cadena esta vacia, false(0) en caso contrario
+    {
+        std::cout << "Ingresa tu nombre completo: "; //imprime en pantalla el mensaje Ingresa tu nombre:
+        std::getline(std::cin, nombre); //el getline permite leer una linea completa incluyendo espacios en blanco
+    }
+
+    std::cout << "Hola " << nombre << ", Bienvenido al curso de C++!" << std::endl;
+    
+    return 0;
+}*/
+
+//DO WHILE
+
+#include <iostream>
+
+int main(){
+
+    
+
+
+
+
+}
 
