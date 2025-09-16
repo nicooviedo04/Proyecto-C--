@@ -657,16 +657,119 @@ int main(){
     return 0;
 }*/
 
-//DO WHILE
+//DO WHILE ejecuta el bloque de código al menos una vez y luego repite mientras la condición sea verdadera.
+
+/*
+#include <iostream>
+int main(){
+
+
+    int numero;
+
+    do{
+        std::cout << "Ingresa un numero positivo: ";
+        std::cin >> numero;
+
+    }while (numero < 0);
+    
+    std::cout << "El numero es: " << numero << std::endl;
+
+
+    return 0;
+
+
+}*/
+
+
+/*ejercicio: Menu simple
+Enunciado:
+Crea un programa en C++ que:
+
+Muestre un menú con tres opciones:
+
+1. Saludar
+
+2. Mostrar la fecha actual (puedes poner un texto fijo para simplificar)
+
+3. Salir
+
+Use un bucle do...while para repetir el menú hasta que el usuario elija salir (opción 3).
+
+#include <iostream>
+using namespace std;
+
+int main(){
+
+
+    int opcion;
+         cout << "\n===== MENU =====" << endl;
+        cout << "1. Saludar" << endl;
+        cout << "2. Mostrar fecha actual" << endl;
+        cout << "3. Salir" << endl;
+        
+    do
+    {
+      cout << "Elige una opcion: ";
+        cin >> opcion;
+    
+
+        switch (opcion)
+        {
+        case 1:
+            cout << "Saludos Usuario \n";
+            break;
+        case 2:
+            cout << "Estamos en el dia 15/09/25\n";
+            break;
+        case 3:
+            cout << "Hasta la proxima\n";
+            break;
+        default:
+            cout << "Selecciona entre el 1, 2 y 3\n";
+        }
+    } while (opcion != 3);
+    
+
+    return 0;
+
+
+}*/
+
+/*Ejercicio: Sumar números hasta cero
+
+Enunciado:
+Crea un programa en C++ que:
+
+Pida al usuario ingresar números enteros.
+
+Use un do...while para sumar los números ingresados.
+
+Termine cuando el usuario ingrese 0 y muestre la suma total.*/
 
 #include <iostream>
 
 int main(){
 
-    
+    int numero;
+    int suma = 0;
+
+    do
+    {
+        std::cout << "Ingresa un numero mayor a 0: " << std::endl;
+        std::cin >> numero;
+        suma += numero;
+
+    } while (numero > 0 && suma != 100);
+
+        std::cout << "Has sumado "<< suma << std::endl;
 
 
 
 
+    return 0;
 }
+
+//Preferi ponerle ademas un limite en la suma 
+
+
 
