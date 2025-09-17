@@ -657,9 +657,9 @@ int main(){
     return 0;
 }*/
 
-//DO WHILE ejecuta el bloque de código al menos una vez y luego repite mientras la condición sea verdadera.
+/*DO WHILE ejecuta el bloque de código al menos una vez y luego repite mientras la condición sea verdadera.
 
-/*
+
 #include <iostream>
 int main(){
 
@@ -678,7 +678,7 @@ int main(){
     return 0;
 
 
-}*/
+}
 
 
 /*ejercicio: Menu simple
@@ -728,12 +728,10 @@ int main(){
             cout << "Selecciona entre el 1, 2 y 3\n";
         }
     } while (opcion != 3);
-    
 
     return 0;
 
-
-}*/
+}
 
 /*Ejercicio: Sumar números hasta cero
 
@@ -744,9 +742,13 @@ Pida al usuario ingresar números enteros.
 
 Use un do...while para sumar los números ingresados.
 
-Termine cuando el usuario ingrese 0 y muestre la suma total.*/
+Termine cuando el usuario ingrese 0 y muestre la suma total.
 
 #include <iostream>
+
+//Usa && cuando quieras que todas las condiciones se cumplan para continuar.
+
+//Usa || cuando quieras que basta con que se cumpla una condición para continuar.
 
 int main(){
 
@@ -769,7 +771,43 @@ int main(){
     return 0;
 }
 
-//Preferi ponerle ademas un limite en la suma 
+//Preferi ponerle ademas un limite en la suma */
 
 
+/*For Ejecuta un ciclo una cantidad de veces definida por el usuario
 
+#include <iostream>
+
+int main(){
+
+        for (int i = 1; i <= 10; i++)
+        {
+           std::cout << i << std::endl;
+        }
+        
+         std::cout << "Hola mundo" << std::endl;
+    
+    return 0;
+}
+#include <iostream>
+int main(){
+
+        int numero;
+         std::cout << "--------APRENDE LAS TABLAS---------\n"<< "---Ingrese un numero del 1 al 10---" << std::endl;
+         std::cin >> numero;
+         for (int i = 0; i <= 10; i++)
+         {
+            std::cout << numero << "x" << i << "=" << numero * i << std::endl;
+         }
+         
+    return 0;
+}*/
+
+#include <iostream>
+
+int main(){
+
+   
+         
+    return 0;
+}
