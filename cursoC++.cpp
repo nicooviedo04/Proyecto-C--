@@ -773,7 +773,6 @@ int main(){
 
 //Preferi ponerle ademas un limite en la suma */
 
-
 /*For Ejecuta un ciclo una cantidad de veces definida por el usuario
 
 #include <iostream>
@@ -803,11 +802,23 @@ int main(){
     return 0;
 }*/
 
+// break y continue: 
 #include <iostream>
 
 int main(){
 
-   
+   for(int i = 1; i <=20; i++)
+   {
+            if (i==13)
+            {
+                //break; //sirve para cortar un bucle
+                continue; //se omite la iteracion actual
+            }
+            
+        std::cout << i << '\n';
+
+   }
          
     return 0;
 }
+
