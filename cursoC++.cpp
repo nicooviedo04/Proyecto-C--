@@ -802,7 +802,7 @@ int main(){
     return 0;
 }*/
 
-// break y continue: 
+/*break y continue: 
 #include <iostream>
 
 int main(){
@@ -820,5 +820,89 @@ int main(){
    }
          
     return 0;
+}*/ 
+
+/*Bucle Anidado en C++
+
+#include <iostream>
+
+int main(){
+
+    int filas;
+    int columnas;
+    char caracter;
+
+
+    std::cout<< "Filas :";
+    std::cin >> filas;
+
+
+    std::cout<< "Columnas :";
+    std::cin >> columnas;
+
+    std::cout<< "Caracter :";
+    std::cin >> caracter;
+
+
+    for (int i = 1; i <= filas ; i++)
+    {
+          for (int j = 1; j <= columnas ; j++){
+          
+            std::cout << caracter << "  ";
+        }
+        
+        std::cout << '\n';
+    }
+
+
+    return 0;
+}*/
+
+/*Generar números aleatorios C++
+#include <iostream>
+int main (){
+
+    srand(time(NULL));
+
+    int num = (rand() % 100)+1;
+  
+    std::cout << num;
+
+
+    return 0;
 }
+
+//ejercicio Daño resivido aleatorio
+
+#include <iostream>
+
+int main (){
+
+    
+    srand(time(NULL));
+    int daño = (rand() % 100)+1;
+    int vida = 100;
+    int saludActual = vida-daño;
+
+    std::cout << "Soldado te hirieron. El dano resivido fue " << daño << std::endl;
+
+    if (saludActual > 50)
+    {
+       std::cout << " Estas bien. No te hirieron tanto. Tu vida actual es de " << saludActual << " PS" << std::endl;
+    }
+    else if (saludActual >=20 && saludActual >= 50)
+    {
+        std::cout << " Te hicieron bastante dano. " << saludActual << " PS" << std::endl;
+    }
+    
+    else if (saludActual < 20)
+    {
+         std::cout << " Hermano! CURATE Y CORRE " << saludActual << " PS" << std::endl;
+    }
+
+    return 0;
+}*/
+
+
+
 
