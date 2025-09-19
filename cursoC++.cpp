@@ -903,6 +903,92 @@ int main (){
     return 0;
 }*/
 
+//Generar eventos aleatorios
+
+#include <iostream>
+#include <ctime>
+
+
+int main(){
+
+    srand (time(0));
+
+    int randNum = (rand() % 5) + 1;
+
+    int saludPy = 100;
+    int dgEnemy = 80;
+    int Phealt = 50;
+    int helmet = 25;
+    
+
+    switch (randNum)
+    {
+    case 1:
+
+        std::cout << "Haz encontrado un casco en el camino." << "Tus PS: " << saludPy + helmet << std::endl;
+        break;
+
+    case 2:
+
+        std::cout << "Estas rodeado. ¡Escondete!\n";
+
+    break;
+    case 3:
+
+        std::cout << "Encontraste una posicion para incrementar la salud."<< "Tus PS: " << saludPy + Phealt << std::endl;
+
+    break;
+    case 4:
+
+        std::cout << "Te han herido." << "Tus PS: " << saludPy - dgEnemy << std::endl;
+
+    break;
+    case 5:
+
+        std::cout << "Te haz salvado \n";
+
+    break;
+    }
+
+
+
+
+
+    return 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
